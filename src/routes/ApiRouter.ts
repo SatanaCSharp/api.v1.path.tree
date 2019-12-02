@@ -26,7 +26,7 @@ export class ApiRouter extends AbstractRouter {
 
 const apiRoutes: IApiRouter[] = [
     { url: "/paths", router: pathRouter },
-    { url: "/directory/trees", router: treeRouter },
+    { url: "/trees/paths/", router: treeRouter },
 ];
 
 export const apiRouter = new ApiRouter(Router(), apiRoutes);
